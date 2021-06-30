@@ -2,11 +2,13 @@ export class User {
     #id;
     #name;
     #messages;
+    #channels;
 
     constructor(id, name){
         this.#id = id;
         this.#name = name;
         this.#messages = [];
+        this.channels = [];
     }
 
     getId(){
@@ -29,4 +31,12 @@ export class User {
     setMessage(message){
         return this.#messages.push(message);
     }
+
+    getChannels(){
+        return this.#channels;
+    }
+    setChannel(channel){
+        return this.#channels.push(channel);
+    }
+
 }

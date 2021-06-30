@@ -2,7 +2,8 @@
 
 import {User} from "./src/User.js";
 import {Message} from "./src/Message.js";
-//import {Channel} from "./src/Channel";
+import {Channel} from "./src/Channel.js";
+
 
 let user = new User(1, "Bruno");
 let message = new Message(1, "minha primeira mensagem");

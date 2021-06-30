@@ -1,10 +1,13 @@
 export class Channel{
     #id;
     #hash;
+    #messages;
+    #users
 
     constructor(id, message){
         this.#id = id;
-        this.#message = message;
+        this.#message = [];
+        this.#user = [];
     }
 
     getId(){
@@ -18,6 +21,13 @@ export class Channel{
         return this.#message;
     }
     setMessage(message){
-        return this.#message = message;
+        return this.#messages.push(message);
+    }
+
+    getUsers(){
+        return this.#cusers;
+    }
+    setUser(user){
+        return this.#users.push(user);
     }
 }
