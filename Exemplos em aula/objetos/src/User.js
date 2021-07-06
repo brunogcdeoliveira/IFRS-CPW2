@@ -8,7 +8,7 @@ export class User {
         this.#id = id;
         this.#name = name;
         this.#messages = [];
-        this.channels = [];
+        this.#channels = [];
     }
 
     getId(){
@@ -25,11 +25,12 @@ export class User {
         return this.#name = name;
     }
 
-    getMessages(){
+    getMessages() {
         return this.#messages;
     }
-    setMessage(message){
-        return this.#messages.push(message);
+
+    setMessage(message) {
+        this.#messages.push(message);
     }
 
     getChannels(){

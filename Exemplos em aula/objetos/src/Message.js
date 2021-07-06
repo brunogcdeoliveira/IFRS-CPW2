@@ -1,23 +1,16 @@
-export class Message{
-    #id;
-    #text;
+export class Message {
 
-    constructor(id, text){
+    #id;
+
+    constructor(id) {
         this.#id = id;
-        this.#text = text;
     }
 
-    getId(){
+    getId() {
         return this.#id;
     }
-    setId(id){
-        return this.#id = id;
-    }
 
-    getText(){
-        return this.#text;
-    }
-    setText(text){
-        return this.#text = text;
+    setId(id) {
+        this.#id = id;
     }
 }
